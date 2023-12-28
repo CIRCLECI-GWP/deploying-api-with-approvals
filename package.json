@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npx nodemon ./server",
     "start": "node ./server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx newman run https://api.postman.com/collections/1600020-42741e8a-ffbf-480c-9c8b-eec56f9a4236?access_key=PMAT-01HJQ3SJE5RCSPZG2NP5Z8D69T -e ./staging.postman_environment.json"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +19,7 @@
     "mongodb-memory-server": "^6.6.7"
   },
   "devDependencies": {
+    "newman": "^6.1.0",
     "nodemon": "^2.0.4"
   }
 }
