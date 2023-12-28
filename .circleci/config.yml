@@ -33,6 +33,8 @@ jobs:
           command: npm run test
 
   deploy:
+    docker:
+      - image: "cimg/base:stable"
     steps:
       - checkout
       - node/install
